@@ -1,5 +1,8 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+.noLink{
+  pointer-events: none;
+}
 .bhagaskara{
   color: #ffffff;
   text-align: center;
@@ -8,6 +11,7 @@
     color: #9f449b;
   }
 }
+
 .item-flex{
   display: flex;
   justify-content: center;
@@ -24,7 +28,7 @@
   display:inline;
   color: #676767;
   font-family: 'Comfortaa', sans-serif;
-  font-size: 60px;
+  font-size: 48px;
   position: relative;
   >span{
     color: #9f449b;
@@ -50,12 +54,13 @@
   top:-25px;
   right: -35px;
 }
+
 .mybtn{
   font-family: 'Lato', sans-serif;
   font-size:21px;
   background: #9f449b;
   color: #ffffff;
-  padding: 25px 60px;
+  padding: 20px 70px;
   margin-top: 85px;
   border: none;
   border-radius: 5px;
@@ -72,9 +77,6 @@
   font-weight:300;
   text-align: center;
 }
-
-
-
 #hello-block{
   background: url("../img/bg-first.jpg");
   background-size: 100% 100%;
@@ -127,12 +129,8 @@
     display: block;
   }
 }
-@media (max-width: 768px){
 
-  icons-menu>a.last>img{
-   width: 10px;
-  }
-}
+
 #myNav{
   background: #ffffff;
   padding-top: 50px;
@@ -200,6 +198,7 @@
 #about{
   padding-top: 150px;
   padding-bottom: 150px;
+  background: #ffffff;
   img{
     width: 100%;
   }
@@ -225,6 +224,7 @@
   }
 }
 #team{
+  background: #ffffff;
   padding-top: 150px;
   padding-bottom: 150px;
   .myArrow{
@@ -319,5 +319,183 @@
   }
   .skills-right{
     padding-left: 50px;
+  }
+}
+#statistics{
+  background: #eeeeee;
+  padding-top: 200px;
+  padding-bottom: 200px;
+  .stat-item{
+    text-align: center;
+
+  }
+  .stat-item>.row{
+    line-height: 60px;
+  }
+  .stat-item-val{
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+    font-size:85px;
+  }
+  .stat-item-title{
+    font-size: 20px;
+    font-weight: 300;
+    color: #bebebe;
+  }
+  .MySliderTestimonials{
+    margin-top: 150px;
+  }
+  .testimonials-photo img{
+    border-radius: 50%;
+    width: 172px;
+    height: 172px;
+  }
+  .testimonials-text{
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    color: #4b4b4b;
+    margin-top: 20px;
+  }
+  .testimonials-name{
+    margin-top: 10px;
+    text-align: center;
+    color: #777777;
+    font-weight:bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 30px;
+  }
+  .slick-dots{
+    font-size:0px;
+    display: flex;
+    justify-content: center;
+  }
+  .slick-dots li{
+    list-style-type: none;
+    margin: 0 5px;
+    padding: 0;
+    display: inline;
+  }
+  .slick-dots li button{
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline;
+    background: transparent;
+    border: 1px solid #777777;
+    outline: none;
+  }
+  .slick-dots li.slick-active button{
+    background: #777777;
+  }
+}
+
+#portfolio{
+
+  #portfolio-cont{
+    padding-top: 150px;
+    padding-bottom: 150px;
+    background: #ffffff;
+    margin-top: -50px;
+  }
+  .btn-categories{
+    border: 1px solid #000000;
+    color: #000000;
+    background: white;
+    padding:5px 22px;
+    font-size:18px;
+    margin:0 10px;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    border-radius: 6px;
+    outline: none;
+
+  }
+  .btn-categories-active{
+    color: #ffffff;
+    background:#9f449b;
+    border: 1px solid #9f449b;
+  }
+  .btn-categories:hover,.btn-categories:focus{
+    color: #ffffff;
+    background:#9f449b;
+    border: 1px solid #9f449b;
+  }
+  .thumbnails-item img{
+    width: 100%;
+    margin-bottom: 15px;
+  }
+  .thumbnails-item{
+    line-height: 15px;
+  }
+  .thumbnails-item-text{
+    text-align: center;
+    font-size:24px;
+    font-family: 'Lato', sans-serif;
+    color: #000;
+  }
+  .thumbnails-item-categories{
+    font-size: 16px;
+    color: #a2a2a2;
+    text-align: center;
+  }
+}
+#contact{
+  padding-top:100px;
+  padding-bottom:100px;
+  .inputs{
+    width: 100%;
+    border: 1px solid #8f8f8f;
+    padding:20px;
+    margin-bottom: 20px;
+    font-size:23px;
+    color: #333333;
+  }
+  textarea.inputs{
+    height: 280px;
+    resize: none;
+  }
+  #arrow-drag{
+    position: absolute;
+    right: 20px;
+    bottom:30px;
+  }
+  .mybtn{
+    margin-top: 0;
+  }
+  p{
+    font-size:23px;
+    color: #4b4b4b;
+    margin-bottom: 40px;
+  }
+  .address{
+    font-weight:bold;
+    color: #030303;
+  }
+  .bhagaskara{
+    font-family: 'Comfortaa', sans-serif;
+    margin-top:150px;
+    color: #676767;
+    font-size:50px;
+  }
+}
+@media (max-width: 768px){
+
+  icons-menu>a.last>img{
+    width: 10px;
+  }
+}
+@media (max-width: 830px) {
+  #hello-block .bhagaskara{
+    font-size:60px;
+  }
+  #hello-block .subtitle{
+    font-size:30px;
+  }
+}
+@media (max-width: 550px) {
+  .icons-menu-nav{
+   margin-left:20%;
   }
 }

@@ -18,9 +18,6 @@ $('a[href^="#"]').click(function () {
         return false;
     }
 
-
-
-
 });
 
 $(document).ready(function(){
@@ -28,8 +25,25 @@ $(document).ready(function(){
         slidesToShow: 3,
         slidesToScroll: 1,
         autoplaySpeed: 2000,
+        infinite:true,
         prevArrow: $('.arrow-prev'),
         nextArrow: $('.arrow-next'),
+        responsive: [
+           {
+               breakpoint: 1000,
+               settings: {
+
+                   slidesToShow:1
+               }
+           }]
+    });
+    $('.MySliderTestimonials').slick({
+        infinite:true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplaySpeed: 2000,
+        dots:true,
+        arrows:false
     });
 
 });
@@ -58,3 +72,7 @@ $(document).scroll(function () {
     //console.log(navPos);
 
 });
+
+
+
+

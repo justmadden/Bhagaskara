@@ -1,5 +1,8 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+.noLink {
+  pointer-events: none; }
+
 .bhagaskara {
   color: #ffffff;
   text-align: center; }
@@ -29,7 +32,7 @@
   display: inline;
   color: #676767;
   font-family: 'Comfortaa', sans-serif;
-  font-size: 60px;
+  font-size: 48px;
   position: relative; }
   .caption-block > span {
     color: #9f449b; }
@@ -59,7 +62,7 @@
   font-size: 21px;
   background: #9f449b;
   color: #ffffff;
-  padding: 25px 60px;
+  padding: 20px 70px;
   margin-top: 85px;
   border: none;
   border-radius: 5px;
@@ -115,10 +118,6 @@
   #hello-block #scroll-arrow a:hover img.hover {
     display: block; }
 
-@media (max-width: 768px) {
-  icons-menu > a.last > img {
-    width: 10px; } }
-
 #myNav {
   background: #ffffff;
   padding-top: 50px;
@@ -139,6 +138,10 @@
   #myNav .myListNav > li > a:focus {
     background: none;
     color: #9f449b; }
+
+.compact-nav {
+  padding-top: 0;
+  padding-bottom: 0; }
 
 #feature {
   padding-top: 190px;
@@ -166,7 +169,8 @@
 
 #about {
   padding-top: 150px;
-  padding-bottom: 150px; }
+  padding-bottom: 150px;
+  background: #ffffff; }
   #about img {
     width: 100%; }
   #about p {
@@ -193,6 +197,7 @@
     margin-bottom: 10px; }
 
 #team {
+  background: #ffffff;
   padding-top: 150px;
   padding-bottom: 150px; }
   #team .myArrow {
@@ -278,3 +283,157 @@
     padding-right: 50px; }
   #team .skills-right {
     padding-left: 50px; }
+
+#statistics {
+  background: #eeeeee;
+  padding-top: 200px;
+  padding-bottom: 200px; }
+  #statistics .stat-item {
+    text-align: center; }
+  #statistics .stat-item > .row {
+    line-height: 60px; }
+  #statistics .stat-item-val {
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+    font-size: 85px; }
+  #statistics .stat-item-title {
+    font-size: 20px;
+    font-weight: 300;
+    color: #bebebe; }
+  #statistics .MySliderTestimonials {
+    margin-top: 150px; }
+  #statistics .testimonials-photo img {
+    border-radius: 50%;
+    width: 172px;
+    height: 172px; }
+  #statistics .testimonials-text {
+    text-align: center;
+    font-size: 40px;
+    font-family: 'Lato', sans-serif;
+    color: #4b4b4b;
+    margin-top: 20px; }
+  #statistics .testimonials-name {
+    margin-top: 10px;
+    text-align: center;
+    color: #777777;
+    font-weight: bold;
+    text-transform: uppercase;
+    font-size: 24px;
+    margin-bottom: 30px; }
+  #statistics .slick-dots {
+    font-size: 0px;
+    display: -webkit-box;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  #statistics .slick-dots li {
+    list-style-type: none;
+    margin: 0 5px;
+    padding: 0;
+    display: inline; }
+  #statistics .slick-dots li button {
+    width: 15px;
+    height: 15px;
+    border-radius: 50%;
+    display: inline;
+    background: transparent;
+    border: 1px solid #777777;
+    outline: none; }
+  #statistics .slick-dots li.slick-active button {
+    background: #777777; }
+
+#portfolio #portfolio-cont {
+  padding-top: 150px;
+  padding-bottom: 150px;
+  background: #ffffff;
+  margin-top: -50px; }
+
+#portfolio .btn-categories {
+  border: 1px solid #000000;
+  color: #000000;
+  background: white;
+  padding: 5px 22px;
+  font-size: 18px;
+  margin: 0 10px;
+  margin-bottom: 20px;
+  text-transform: uppercase;
+  border-radius: 6px;
+  outline: none; }
+
+#portfolio .btn-categories-active {
+  color: #ffffff;
+  background: #9f449b;
+  border: 1px solid #9f449b; }
+
+#portfolio .btn-categories:hover, #portfolio .btn-categories:focus {
+  color: #ffffff;
+  background: #9f449b;
+  border: 1px solid #9f449b; }
+
+#portfolio .thumbnails-item img {
+  width: 100%;
+  margin-bottom: 15px; }
+
+#portfolio .thumbnails-item {
+  line-height: 15px; }
+
+#portfolio .thumbnails-item-text {
+  text-align: center;
+  font-size: 24px;
+  font-family: 'Lato', sans-serif;
+  color: #000; }
+
+#portfolio .thumbnails-item-categories {
+  font-size: 16px;
+  color: #a2a2a2;
+  text-align: center; }
+
+#contact {
+  padding-top: 100px;
+  padding-bottom: 100px; }
+  #contact .inputs {
+    width: 100%;
+    border: 1px solid #8f8f8f;
+    padding: 20px;
+    margin-bottom: 20px;
+    font-size: 23px;
+    color: #333333; }
+  #contact textarea.inputs {
+    height: 280px;
+    resize: none; }
+  #contact #arrow-drag {
+    position: absolute;
+    right: 20px;
+    bottom: 30px; }
+  #contact .mybtn {
+    margin-top: 0; }
+  #contact p {
+    font-size: 23px;
+    color: #4b4b4b;
+    margin-bottom: 40px; }
+  #contact .address {
+    font-weight: bold;
+    color: #030303; }
+  #contact .bhagaskara {
+    font-family: 'Comfortaa', sans-serif;
+    margin-top: 150px;
+    color: #676767;
+    font-size: 50px; }
+
+@media (max-width: 768px) {
+  icons-menu > a.last > img {
+    width: 10px; } }
+
+@media (max-width: 830px) {
+  #hello-block .bhagaskara {
+    font-size: 60px; }
+  #hello-block .subtitle {
+    font-size: 30px; } }
+
+@media (max-width: 550px) {
+  .icons-menu-nav {
+    margin-left: 20%; } }
