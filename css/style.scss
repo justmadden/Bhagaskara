@@ -175,6 +175,7 @@
     text-align: center;
     font-size: 20px;
     font-family: 'Lato', sans-serif;
+    margin-bottom: 40px;
 
   }
   .item img.main{
@@ -201,6 +202,7 @@
   background: #ffffff;
   img{
     width: 100%;
+    margin-bottom: 20px;
   }
   p{
     font-size:20px;
@@ -345,6 +347,7 @@
   .MySliderTestimonials{
     margin-top: 150px;
   }
+
   .testimonials-photo img{
     border-radius: 50%;
     width: 172px;
@@ -480,22 +483,113 @@
     font-size:50px;
   }
 }
-@media (max-width: 768px){
 
-  icons-menu>a.last>img{
-    width: 10px;
+@media all and (min-width: 992px)and(max-width: 1199px) {
+  #myNav .myListNav > li > a{
+    font-size:17px;
   }
+  #myNav #myBrand{
+    font-size: 35px;
+  }
+}
+@media all and (max-width: 992px) {
+  #team .skills-right{
+    padding-left: 0;
+
+  }
+  #team .skills-left{
+    padding-right: 0;
+  }
+  #statistics .stat-item{
+    margin-bottom: 40px;
+  }
+  #contact .mybtn{
+    margin-bottom: 30px;
+  }
+  #contact{
+    padding-top: 50px;
+  }
+  #portfolio .thumbnails-item{
+    margin-bottom: 40px;
+  }
+}
+
+@media all and (min-width: 992px) and (max-width: 1200px){
+  #hello-block .icons-menu-nav img{
+    width: 99%;
+  }
+  #hello-block #scroll-arrow img{
+    width: 90%;
+  }
+
+}
+@media all and (min-width: 768px)and(max-width: 992px) {
+  #myNav .myListNav > li > a{
+    font-size:14px;
+  }
+  #myNav #myBrand{
+    font-size: 20px;
+  }
+
 }
 @media (max-width: 830px) {
   #hello-block .bhagaskara{
     font-size:60px;
   }
   #hello-block .subtitle{
-    font-size:30px;
+    font-size:45px;
+  }
+  #hello-block .subtitle>span{
+    font-size:22px;
   }
 }
-@media (max-width: 550px) {
-  .icons-menu-nav{
-   margin-left:20%;
+@media (max-width: 768px){
+
+  icons-menu>a.last>img{
+    width: 10px;
+  }
+}
+@media (max-width: 768px) {
+  #hello-block .icons-menu-nav img{
+    margin: 0 auto;
+    margin-bottom: 20px;
+  }
+  .beautiful-caption{
+    font-size:40px;
+  }
+  #statistics .testimonials-text{
+    font-size:35px;
+  }
+  #statistics .testimonials-name{
+    font-size:20px;
+  }
+}
+
+@media (max-width: 469px) {
+  #hello-block .bhagaskara{
+    font-size:50px;
+  }
+  #statistics .stat-item-val{
+    font-size:60px;
+  }
+  #statistics .stat-item-title {
+    font-size:15px;
+  }
+  #statistics .testimonials-text{
+    font-size:28px;
+  }
+  #statistics .testimonials-name{
+    font-size:16px;
+  }
+  #portfolio .btn-categories{
+    font-size:16px;
+    padding: 4px 16px;
+  }
+  .caption-block {
+    font-size:36px;
+  }
+  .caption-block:before,.caption-block:after{
+    width: 25px;
+    height: 25px;
   }
 }

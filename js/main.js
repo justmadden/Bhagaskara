@@ -3,7 +3,6 @@ $('a[href^="#"]').click(function () {
 
     var elementClick=$(this).attr("href");
     var destination=$(elementClick).offset().top;
-    console.log(this);
     if(elementClick=="#myNav")
     {
         $('body').animate({scrollTop:destination},1000);
@@ -62,14 +61,13 @@ $(document).scroll(function () {
         $('#myNav').css("padding","50px 0px");
         return;
     }
-    if(navPos+30<=0)
+    if(navPos+60<=0)
     {
         $('#myNav').addClass("navbar-fixed-top");
         $('#myNav').css("padding","10px 0px");
     }
 
 
-    //console.log(navPos);
 
 });
 
