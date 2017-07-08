@@ -138,6 +138,10 @@
   #myNav .myListNav > li > a:focus {
     background: none;
     color: #9f449b; }
+  #myNav button.navbar-toggle {
+    border: 1px solid #9f449b; }
+  #myNav button.navbar-toggle > span {
+    background: #9f449b; }
 
 .compact-nav {
   padding-top: 0;
