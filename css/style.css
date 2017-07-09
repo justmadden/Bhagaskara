@@ -513,8 +513,15 @@
     font-size: 20px; } }
 
 @media (max-width: 469px) {
+  #hello-block .icons-menu img {
+    width: 150px;
+    height: 160px; }
   #hello-block .bhagaskara {
-    font-size: 50px; }
+    font-size: 47px; }
+  #hello-block .subtitle {
+    font-size: 40px; }
+  #hello-block .subtitle > span {
+    font-size: 20px; }
   #statistics .stat-item-val {
     font-size: 60px; }
   #statistics .stat-item-title {
