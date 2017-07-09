@@ -1,5 +1,32 @@
 @import url("https://fonts.googleapis.com/css?family=Comfortaa");
 @import url("https://fonts.googleapis.com/css?family=Lato:300,400,700");
+@-webkit-keyframes block {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: .1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+@keyframes block {
+  0% {
+    -webkit-transform: scale(0.1);
+    transform: scale(0.1);
+    opacity: .1; }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+    opacity: 1; } }
+
+.MyAnimation {
+  -webkit-animation-name: block;
+  animation-name: block;
+  -webkit-animation-duration: 1.2s;
+  animation-duration: 1.2s;
+  -webkit-animation-timing-function: ease-in-out;
+  animation-timing-function: ease-in-out; }
+
 .noLink {
   pointer-events: none; }
 

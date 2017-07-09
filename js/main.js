@@ -66,11 +66,10 @@ $(document).scroll(function () {
         $('#myNav').addClass("navbar-fixed-top");
         $('#myNav').css("padding","10px 0px");
     }
-
-
-
 });
 
 
 
-
+$(document).ready(function () {
+   new WOW().init();
+});

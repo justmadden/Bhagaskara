@@ -1,5 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Comfortaa');
 @import url('https://fonts.googleapis.com/css?family=Lato:300,400,700');
+
+@keyframes block {
+    0%{
+    transform: scale(0.1);
+      opacity: .1;
+  }
+  100%{
+    transform: scale(1);
+    opacity: 1;
+  }
+}
+.MyAnimation{
+  animation-name: block;
+  animation-duration: 1.2s;
+  animation-timing-function: ease-in-out;
+}
+
 .noLink{
   pointer-events: none;
 }
@@ -23,6 +40,7 @@
 .caption{
   padding-bottom: 120px;
   text-align: center;
+
 }
 .caption-block{
   display:inline;
@@ -33,6 +51,7 @@
   >span{
     color: #9f449b;
   }
+
 }
 .caption-block:before{
   content: " ";
