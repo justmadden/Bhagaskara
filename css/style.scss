@@ -596,6 +596,9 @@
   #hello-block .bhagaskara{
     font-size:47px;
   }
+  #myNav #myBrand {
+    font-size:30px;
+  }
   #hello-block .subtitle {
     font-size: 40px;
   }
@@ -625,4 +628,15 @@
     width: 25px;
     height: 25px;
   }
+}
+@media (max-width: 375px){
+  #hello-block .icons-menu img{
+    width:130px;
+    height:140px;
+  }
+  #portfolio .btn-categories{
+    font-size:12px;
+    padding: 4px 14px;
+  }
+
 }
