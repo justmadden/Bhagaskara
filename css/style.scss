@@ -628,15 +628,30 @@
     width: 25px;
     height: 25px;
   }
+  #contact .bhagaskara {
+    margin-top: 50px;
+    font-size: 47px; }
 }
 @media (max-width: 375px){
   #hello-block .icons-menu img{
-    width:130px;
-    height:140px;
+    width:120px;
+    height:130px;
   }
   #portfolio .btn-categories{
     font-size:12px;
     padding: 4px 14px;
   }
+  #hello-block .bhagaskara{
+    font-size:35px;
+  }
+  #hello-block .subtitle {
+    font-size: 20px;
+  }
+  #hello-block .subtitle>span {
+    font-size: 14px;
+  }
+  #contact .bhagaskara {
+    margin-top: 50px;
+    font-size: 35px; }
 
 }
