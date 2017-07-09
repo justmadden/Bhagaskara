@@ -3,6 +3,7 @@ $('a[href^="#"]').click(function () {
 
     var elementClick=$(this).attr("href");
     var destination=$(elementClick).offset().top;
+    document.getElementById('myNav').getElementsByClassName("navbar-collapse")[0].classList.remove("in");
     if(elementClick=="#myNav")
     {
         $('body').animate({scrollTop:destination},1000);
@@ -16,6 +17,8 @@ $('a[href^="#"]').click(function () {
         $('body').animate({scrollTop:destination-150},1000);
         return false;
     }
+
+
 
 });
 
