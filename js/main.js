@@ -64,7 +64,7 @@ $(document).scroll(function () {
         $('#myNav').css("padding","50px 0px");
         return;
     }
-    if(navPos+60<=0)
+    if(navPos+1<=0)
     {
         $('#myNav').addClass("navbar-fixed-top");
         $('#myNav').css("padding","10px 0px");
@@ -75,4 +75,6 @@ $(document).scroll(function () {
 
 $(document).ready(function () {
    new WOW().init();
+
+
 });
